@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template Project</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Shortly</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
+
 <body>
 
 
 
   <!-- SITE HEADER START -->
-
   <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="images/logo.svg" width="120" height="33" alt="Shortly site's logo">
+        </a>
 
+        <button class="site-header__menu-btn js-menu-open-btn" type="button"></button>
+
+        <nav class="site-nav">
+          <div class="sitsdse-header__list-box">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Features</a>
+              </li>
+  
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Pricing</a>
+              </li>
+  
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Resources</a>
+              </li>
+            </ul>
+          </div>
+          
+
+          <div class="site-header__end">
+            <a class="site-header__login" href="#">Login</a>
+
+            <a class="site-header__signup js-menu-close-btn" href="#">Sign Up</a>
+          </div>
+        </nav>
+
+
+      </div>
+    </div>
   </header>
-
   <!-- SITE HEADER END -->
 
 
@@ -26,7 +61,32 @@
   <main class="site-main">
 
     <section class="hero">
-      
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__info">
+            <h1 class="hero__title">
+              More than just shorter links
+            </h1>
+  
+            <div class="hero__text-box">
+              <p class="hero__text">
+                Build your brand’s recognition and get detailed insights on how your links are performing.
+              </p>
+            </div>
+  
+            <a class="hero__link" href="#">Get Started</a>
+          </div>
+
+          <form class="hero__form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <label class="hero__label">
+              <input class="hero__input" type="url" name="user_url" placeholder="Shorten a link here..." minlength="5" required>   
+              <span class="hero__input-span">Please add a link</span>
+            </label>
+             
+             <button class="hero__button" type="submit">Shorten It!</button>
+          </form>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -39,5 +99,8 @@
   </footer>
   <!-- SITE FOOTER END -->
 
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
