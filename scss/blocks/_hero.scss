@@ -1,0 +1,253 @@
+/* HERO SECTION START */
+
+.hero {
+	padding-top: 397px;
+	padding-bottom: 168px;
+	background-image: url("../images/hero-bg-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: calc(50% + 90px) 0px;
+}
+
+.hero__inner {
+	position: relative;
+}
+
+.hero__info {
+	max-width: 327px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero__title {
+	margin: 0;
+	margin-bottom: 15px;
+	font-weight: $font-weight;
+	font-size: 42px;
+	line-height: 48px;
+	letter-spacing: -1.05px;
+	color: #34313D;
+}
+
+.hero__text {
+	margin: 0;
+	margin-bottom: 32px;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.122727px;
+	color: #9E9AA8;
+}
+
+.hero__link {
+	display: inline-block;
+	padding: 13px 40px;
+	background: #2BD0D0;
+	border-radius: 28px;
+	font-weight: $font-weight;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+
+	&:hover {
+		background-color: #9AE3E3;
+	}
+}
+
+.hero__form {
+	position: absolute;
+	top: 130%;
+	width: 100%;
+	max-width: 1110px;
+	padding: 24px;
+	background-image: url("../images/hero-input-bgi-desc.svg");
+	background-size: cover;
+	background-position: top right;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.hero__input {
+	display: block;
+	width: 100%;
+	max-width: 655px;
+	margin-bottom: 4px;
+	padding: 13px 0 13px 13px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+
+	&::placeholder {
+		font-size: 16px;
+		line-height: 36px;
+		letter-spacing: 0.12px;
+		color: #34313D;
+		mix-blend-mode: normal;
+		opacity: 0.5;
+	}
+
+	&:not(:placeholder-shown):not(:focus):invalid {
+		color: #F46363;
+		border-color: #F46363;
+	}
+
+	&:not(:placeholder-shown):not(:focus):invalid~span {
+		opacity: 1;
+	}
+}
+
+.hero__input-span {
+	display: block;
+	margin-bottom: 16px;
+	font-style: italic;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.0818182px;
+	color: #F46363;
+	text-align: left;
+	opacity: 0;
+}
+
+.hero__button {
+	display: inline-block;
+	padding: 10px 94px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 27px;
+	color: #FFFFFF;
+	border: none;
+	background-color: #2BD0D0;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: #9AE3E3;
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	.site-nav {
+		max-width: 300px;
+	}
+
+	.site-header__signup {
+		padding: 9px 20px;
+	}
+
+	.hero__button {
+		padding: 10px 67px;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	.hero {
+		padding-top: 116px;
+		padding-bottom: 222px;
+		background-position: calc(50% + 220px) 55px;
+	}
+
+	.hero__info {
+		margin: 0;
+		text-align: left;
+	}
+
+	.hero__form {
+		position: absolute;
+		top: 130%;
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		max-width: 1110px;
+		padding: 52px 65px;
+		padding-bottom: 26px;
+		background-image: url("../images/hero-input-bgi-desc.svg");
+		background-size: cover;
+		background-position: top right;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.hero__label {
+		width: 64%;
+		max-width: 769px;
+		margin-right: 24px;
+	}
+
+	.hero__input {
+		display: block;
+		width: 100%;
+		max-width: 769px;
+		margin-bottom: 8px;
+		padding: 21px 0 21px 29px;
+		border-radius: 10px;
+	}
+
+	.hero__input-span {
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+
+	.hero__button {
+		display: inline-block;
+		// maxwidth: 188px;
+		// margin-left: 24px;
+		padding: 17px 40px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		border-radius: 10px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.hero {
+		background-image: url("../images/hero-bg-mobile.svg");
+		background-size: 733px 482px;
+		background-position: calc(50% + 460px) 55px;
+	}
+
+	.hero__info {
+		max-width: 563px;
+	}
+
+	.hero__title {
+		margin-bottom: 5px;
+		font-size: 80px;
+		line-height: 90px;
+		letter-spacing: -2px;
+	}
+
+	.hero__text {
+		margin-bottom: 38px;
+		font-size: 22px;
+		line-height: 36px;
+		letter-spacing: 0.15px;
+	}
+
+	.hero__link {
+		display: inline-block;
+		padding: 13px 40px;
+		background: #2BD0D0;
+		border-radius: 28px;
+		font-weight: $font-weight;
+		font-size: 20px;
+		line-height: 30px;
+		color: #FFFFFF;
+	}
+
+	.hero__form {
+		top: 132%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.hero__label {
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1150px) {
+	.hero__label {
+		width: 100%;
+	}
+}
+
+

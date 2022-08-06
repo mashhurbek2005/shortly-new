@@ -1,0 +1,51 @@
+/* Links section start */
+
+.links {
+	padding: 90px 0;
+	background-image: url("../images/links-bg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.links__info {
+	text-align: center;
+}
+
+.links__title {
+	margin: 0;
+	margin-bottom: 16px;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 48px;
+	letter-spacing: -0.7px;
+	color: #FFFFFF;
+}
+
+.links__link {
+	display: inline-block;
+	padding: 14px 40px;
+	padding-bottom: 12px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+	background-color: #2BD0D0;
+	border-radius: 28px;
+
+	&:hover {
+		background-color: #9AE3E3;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.links{
+		padding: 57px 0;
+	}
+	
+	.links__title {
+		margin-bottom: 32px;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: -1px;
+	}
+}

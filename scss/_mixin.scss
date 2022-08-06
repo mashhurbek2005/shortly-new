@@ -1,0 +1,10 @@
+@mixin list-unstyle {
+    margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+@mixin link-style {
+	display: inline-block;
+	text-decoration: none;
+}
